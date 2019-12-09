@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9DF6EE1-C6DF-45DB-9A2F-6AE2E695896B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Movie_Rental_System</RootNamespace>
+    <AssemblyName>Movie Rental System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="All_Rented_Movies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="All_Rented_Movies.Designer.cs">
+      <DependentUpon>All_Rented_Movies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Customer.Designer.cs">
+      <DependentUpon>Delete_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Movie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_Movie.Designer.cs">
+      <DependentUpon>Delete_Movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Issue_Movie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Issue_Movie.Designer.cs">
+      <DependentUpon>Issue_Movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Page.Designer.cs">
+      <DependentUpon>Main_Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_RentalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Movie_RentalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_RentalDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Movie_RentalDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_RentalDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Movie_RentalDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_RentalDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Movie_RentalDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_RentalDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Movie_RentalDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_RentalDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Movie_RentalDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_RentalDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Movie_RentalDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_RentalDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Movie_RentalDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_RentalDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Movie_RentalDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_RentalDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Movie_RentalDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_RentalDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Movie_RentalDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_RentalDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Movie_RentalDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Return_Movie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Return_Movie.Designer.cs">
+      <DependentUpon>Return_Movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Customer.Designer.cs">
+      <DependentUpon>Update_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Movies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Movies.Designer.cs">
+      <DependentUpon>Update_Movies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Who borrows most.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Who borrows most.Designer.cs">
+      <DependentUpon>Who borrows most.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="All_Rented_Movies.resx">
+      <DependentUpon>All_Rented_Movies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Customer.resx">
+      <DependentUpon>Delete_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_Movie.resx">
+      <DependentUpon>Delete_Movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Issue_Movie.resx">
+      <DependentUpon>Issue_Movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Page.resx">
+      <DependentUpon>Main_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Return_Movie.resx">
+      <DependentUpon>Return_Movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Customer.resx">
+      <DependentUpon>Update_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Movies.resx">
+      <DependentUpon>Update_Movies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Who borrows most.resx">
+      <DependentUpon>Who borrows most.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Movie_RentalDataSet.xsc">
+      <DependentUpon>Movie_RentalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Movie_RentalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Movie_RentalDataSet.xss">
+      <DependentUpon>Movie_RentalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet1.xsc">
+      <DependentUpon>Movie_RentalDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Movie_RentalDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Movie_RentalDataSet1.xss">
+      <DependentUpon>Movie_RentalDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet10.xsc">
+      <DependentUpon>Movie_RentalDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Movie_RentalDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Movie_RentalDataSet10.xss">
+      <DependentUpon>Movie_RentalDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet11.xsc">
+      <DependentUpon>Movie_RentalDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Movie_RentalDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Movie_RentalDataSet11.xss">
+      <DependentUpon>Movie_RentalDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet2.xsc">
+      <DependentUpon>Movie_RentalDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Movie_RentalDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Movie_RentalDataSet2.xss">
+      <DependentUpon>Movie_RentalDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet3.xsc">
+      <DependentUpon>Movie_RentalDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Movie_RentalDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Movie_RentalDataSet3.xss">
+      <DependentUpon>Movie_RentalDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet4.xsc">
+      <DependentUpon>Movie_RentalDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Movie_RentalDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Movie_RentalDataSet4.xss">
+      <DependentUpon>Movie_RentalDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet5.xsc">
+      <DependentUpon>Movie_RentalDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Movie_RentalDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Movie_RentalDataSet5.xss">
+      <DependentUpon>Movie_RentalDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet6.xsc">
+      <DependentUpon>Movie_RentalDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Movie_RentalDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Movie_RentalDataSet6.xss">
+      <DependentUpon>Movie_RentalDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet7.xsc">
+      <DependentUpon>Movie_RentalDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Movie_RentalDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Movie_RentalDataSet7.xss">
+      <DependentUpon>Movie_RentalDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet8.xsc">
+      <DependentUpon>Movie_RentalDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Movie_RentalDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Movie_RentalDataSet8.xss">
+      <DependentUpon>Movie_RentalDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet9.xsc">
+      <DependentUpon>Movie_RentalDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Movie_RentalDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Movie_RentalDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Movie_RentalDataSet9.xss">
+      <DependentUpon>Movie_RentalDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange_textile_background_16_211120.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1920x1080-amber-orange-solid-color-background.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
